@@ -31,7 +31,7 @@
         <!-- Meta tags -->
         <meta charset="utf-8"/>
         <title>Penceo Challenge</title>
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; connect-src *">
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; connect-src *">-->
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
@@ -50,7 +50,7 @@
         </header>
 
         <div ng-controller="MapsController">
-            <leaflet geojson="geojson"></leaflet>
+            <leaflet id="map" geojson="geojson"></leaflet>
         </div>
 
         <section ui-view></section>
