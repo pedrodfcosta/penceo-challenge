@@ -8,8 +8,18 @@ body {
 }
 section {
     display: inline-block;
-    padding: 0 50px;
+    padding: 30px 50px 0;
 }
 ul {
     font-weight: 500;
+}
+li {
+    cursor: pointer;
+}
+#map {
+    height: 70vh;
+    width: 50vw;
+    float: right;
+    right: 50px;
+    top: 50px;
 }
