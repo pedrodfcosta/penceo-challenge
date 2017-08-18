@@ -49,7 +49,9 @@
             </h1>
         </header>
 
-        <section id="map"></section>
+        <div ng-controller="MapsController">
+            <leaflet geojson="geojson"></leaflet>
+        </div>
 
         <section ui-view></section>
 
@@ -57,12 +59,13 @@
         <script src="assets/libs/angular/angular.min.js"></script>
         <script src="assets/libs/angular-ui-router/release/angular-ui-router.min.js"></script>
         <script src="assets/libs/leaflet/dist/leaflet.js"></script>
+        <script src="assets/libs/angular-leaflet-directive/dist/angular-leaflet-directive.min.js"></script>
         <!-- Modules -->
         <script type="text/javascript" src="app/app.js"></script>
         <script type="text/javascript" src="app/router.js"></script>
         <!-- Services -->
-        <script type="text/javascript" src="app/services/leaflet.js"></script>
-        <!--<script type="text/javascript" src="app/services/userCollection.js"></script>-->
+        <script type="text/javascript" src="app/services/userCollection.js"></script>
+        <script type="text/javascript" src="app/services/mapsController.js"></script>
         <!-- Components -->
         <script type="text/javascript" src="app/components/mainController.js"></script>
         <script type="text/javascript" src="app/components/users/usersController.js"></script>
