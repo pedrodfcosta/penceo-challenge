@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.penceo.challenge" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+    <name>Penceo Challenge</name>
+
+    <description>
+        A small web app in Angular that can handle user information from a JSON API.
+        On the entry page of the web app, a list of all users needs to be shown, along with a Leaflet map where all users should be correctly marked.
+        Clicking on a user on the list or on his/her marker on the map, should take us to the user’s full information page.
+        Each user must have his/her own information page, conveniently displaying all the information available alongside a Leaflet map marking the user’s location.
+    </description>
+
+    <author email="costa.pedrodf@gmail.com" href="https://github.com/pedrodfcosta">
+        Pedro Costa
+    </author>
+
+    <content src="index.html" />
+
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+
+</widget>
