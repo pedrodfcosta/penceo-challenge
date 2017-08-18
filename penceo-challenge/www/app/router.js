@@ -9,5 +9,13 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
             url: "",
             templateUrl: "app/components/main.html",
             controller: "MainController"
+        })
+        .state('users', {
+            url: "",
+            params: {
+                user: undefined
+            },
+            templateUrl: 'app/components/users/users.html',
+            controller: "UsersController"
         });
 });

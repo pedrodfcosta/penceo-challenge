@@ -1,0 +1,19 @@
+<div class="details-box">
+    <h4>{{ user.name }}'s detailed info:</h4>
+    <hr>
+    <p>Name: {{ user.name }}</p>
+    <p>Username: {{ user.username }}</p>
+    <p>email: {{ user.email }}</p>
+    <p>address: {{ user.address.street }}, {{ user.address.suite }} - {{ user.address.city }}, Zipcode: {{ user.address.zipcode }}</p>
+    <p>Geographic location: <br/>
+        Latitude: {{ user.address.geo.lat }} - Longitude: {{ user.address.geo.lng }}</p>
+    <p>Phone number: {{ user.phone }}</p>
+    <p>Website: {{ user.website }}</p>
+    <p>Company: <br/>
+        {{ user.company.name }}<br/>
+        "{{ user.company.catchPhrase }}"<br/>
+        {{ user.company.bs }}<br/>
+    </p>
+</div>
+<br/>
+<button type="button" class="btn btn-primary pull-right" ui-sref="main">Return to user's list</button>

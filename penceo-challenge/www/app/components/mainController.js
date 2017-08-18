@@ -3,4 +3,8 @@ app.controller('MainController', function($rootScope, $scope, $http, $state) {
         $scope.users = result.data;
     });
 
+    $scope.userDetails = function(user) {
+        $state.go('users', {user:user});
+    }
+
 });
