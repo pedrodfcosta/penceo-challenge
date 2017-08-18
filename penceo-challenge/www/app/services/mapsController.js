@@ -1,4 +1,6 @@
-app.controller("MapsController", [ '$scope', '$http', function($scope, $http) {
+'use strict';
+
+app.controller("MapsController", [ '$scope', '$http', 'UserCollection', function($scope, $http, UserCollection) {
     angular.extend($scope, {
         defaults: {
             scrollWheelZoom: false
@@ -21,4 +23,23 @@ app.controller("MapsController", [ '$scope', '$http', function($scope, $http) {
             }
         });
     });
+
+    // Not working properly :(
+
+//    function showUsers (user, layer) {
+//        layer.bindPopup('<h2>Hi, my name is' + user.name + '</h2>');
+//    }
+//
+//    var usersList = {};
+//    UserCollection.getUsers().then(function(result) {
+//        usersList = result.data;
+//    })
+//
+//    L.geoJSON(usersList, {
+//
+//        onEachFeature: showUsers
+//
+//    }).addTo(map);
+
+
 }]);
